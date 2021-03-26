@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %} index {% endblock title %}
+
+{% block body %}
+<p>{{nn}}</p>
+
+    <ul type="square">
+
+        {# Esto es un comentario #}
+
+        {% for item in asignaturas %}
+
+            <li>{{item}}</li>
+
+        {% endfor %}
+
+    </ul>
+{% endblock body %}
+
+

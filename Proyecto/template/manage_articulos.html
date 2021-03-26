@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %} Manage Articulos {% endblock title%}
+{% block body %}
+
+    <forms method="post">
+        {% csrf_token %}
+        <label for="name">Nombre Producto: </label>
+        <input type="text">
+        <br>
+        <label for="name">Precio: </label>
+        <input type="text">
+        <br>
+        <label for="name">Categoria: </label>
+        <input type="text">
+        <br>
+        <label for="name">Disponibilidad: </label>
+        <input type="text">
+        <br>
+        <label for="name">Descuento: </label>
+        <input type="text">
+        <br>
+        <button type="submit">Guardar</button>
+
+    </forms>
+
+{% endblock body %}
